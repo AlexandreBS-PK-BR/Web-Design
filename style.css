@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap");
+
+/* CORES QUE SERAM USADA NA PAG */
+:root {
+    --primary-color: #669ccb;
+    --primary-color-dark: #5681a7;
+    --secondary-color: #e8f1fa;
+    --text-dark: #282d31;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+
+    /* TAMANHO DA PAG */
+    --max-width: 1200px;
+}
+
+/* RETIRANDO ATRIBUTOS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* TAMANDO DA PAG */
+.section__container {
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+/*  */
+.section__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ADD ATRIBUTOS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* TAMANHO DA PAG */
+.section__container {
+    padding: 5rem 1rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+/* POSIÇAODO TITULO COR E ESPAÇAMENTO */
+.section__title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* POSIÇAO DO SUBTITULO E COR  */
+.section__subtitle {
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--primary-color);
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+/* PORPOÇAO DA IMG */
+img {
+    width: 100%;
+}
+
+/* FONTE DA PAG */
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/* POSISAO DO TEXTO E MENU PAG HOME */
+nav {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* POSIÇAO DA LOGO E COR */
+.nav__logo a {
+    text-decoration: none;
+    color: var(--extra-light);
+    font-size: 1.5rem;
+}
+
+/* POSIÇAO DO MENU E ESPAÇAMENTO*/
+.nav__links {
+    display: none;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* COR DO MENU */
+.link {
+    color: var(--extra-light);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* A COR MUDA COM AÇAO DO MAUSE */
+.link:hover {
+    color: var(--primary-color);
+}
+
+/* POSIÇAO DA IMAGEM, COR DO FUNDO DA IMAGEM */
+header {
+    height: 100vh;
+    background-image: linear-gradient(
+        rgba(45, 92, 132, 0.5),
+        rgba(45, 92, 132, 0.5)),
+        url("img/bg-1.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+/* POSICAO DO TITULO E TEXTO BOTAO */
+header .section__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* POSIÇAO DO TITULO E TEXTO E BOTAO E COR */
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    color: var(--extra-light);
+}
+
+/* TAMANHO DO TITULO */
+.header__content h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 5rem;
+}
+
+/* POSIÇAO DO TEXTO */
+.header__content p {
+    text-align: center;
+}
+
+/* CONSTRUINDO BOTAO E SUA COR E TAMANHO */
+.header__content button {
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--extra-light);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* ACAO DE TROCA DE COR AO PASAR O MAUSE */
+.header__content button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/* COR DE FUNDO */
+.journey__container {
+    background-color: var(--secondary-color);
+} 
+
+/* COLOCANDO AS IMG EM 2 COLUNAS E ESPAÇAMENTO */
+.journey__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* BARRA ABAIXO DA IMG, ONDE VAI O NOME DO LOCAL */
+.country__card {
+    background-color: var(--extra-light);
+}
+
+/* COR E TAMANHO DA LETRA E POSIÇAO */
+.country__name {
+    padding: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* SIMBULO DO LOCAL */
+.country__name i {
+    font-size: 1.2rem;
+}
+
+/* O ESTILO DA LETRA */
+.country__name span {
+    font-style: italic;
+}
+
+/* COR DE FUNDO DO IMAGEM */
+.banner__container {
+    background-image: linear-gradient(
+        rgba(35, 71, 103, 0.5),
+        rgba(35, 71, 103, 0.5)
+    ),
+    url("img/bg-2.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* TAMANHO DA IMAGEM */
+.banner__container .section__container {
+    padding: 10rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* POSIÇAO DOS TEXTO, COR E TAMANHO E ESPAÇAMENTO */
+.banner__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: center;
+    color: var(--extra-light);
+}
+
+/* TAMANHO DO TEXTO */
+.banner__content h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+/* CONSTRUINDO BOTAO, TAMANHO E COR  */
+.banner__content button {
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.display__container {
+    background-color: var(--secondary-color);
+}
+
+/* COR DO TEXTO E SUBTEXTO PRETO */
+.display__container :is(.section__title, .section__subtitle) {
+    color: var(--text-dark);
+}
+
+/* POSIÇAO DAS IMAGENS E ESPAÇAMENTO */
+.display__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+/* CONSTRUINDO QUADRADO COM TEXTO, E SUA POSIÇAO TEXTO CENTRO  */
+.display__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    background-color: var(--extra-light);
+    text-align: center;
+}
+
+/* COR DO PLANETA E MAPA */
+.display__card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* COR DO 'travel' */
+.display__card h4 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 1rem;
+    color: var(--text-dark);
+}
+
+/* COR E POSIÇAO DO TEXTO ABAIXO ICON */
+.display__card p {
+    font-size: 0.8rem;
+    padding: 0 1rem;
+    color: var(--text-dark);
+}
+
+/* POSIÇAO DAS IMAGEM, 2 IMAGENS E 2 QUADRADOS COM TEXTO DENTRO */
+.display__grid .grid-1 {
+    grid-area: 1/1/3/3;
+}
+
+/* COR DE FUNDO DO RODA PE E COR DOS TEXTO E ICONES */
+footer {
+    background-color: var(--text-dark);
+    color: var(--secondary-color);
+}
+
+/* ESPAÇAMENTOS ENTRE OS TEXTO E ICONES */
+footer .section__container {
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+/* TAMANHO DA LETRA TEXTO */
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* ICONES E ESPAÇAMENTO */
+.social__icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* TAMANHO DOS ICONES */
+.social__icons i {
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* ESTILO DE LETRA */
+footer p {
+    font-style: italic;
+}
+
+@media (min-width: 640px) {
+    .nav__links {
+        display: flex;
+    }
+
+    header .section__container {
+        justify-content: flex-start;
+    }
+
+    .header__content {
+        max-width: 400px;
+        align-items: flex-start;
+    }
+
+    .header__content p {
+        text-align: left;
+    }
+
+    .journey__grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .display__grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .display__card {
+        gap: 0;
+    }
+
+    .display__card i {
+        font-size: 1.75rem;
+    }
+
+    .display__card h4 {
+        font-size: 1rem;
+    }
+
+    .display__card p {
+        font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 786px) {
+    .banner__container .section__container {
+        justify-content: flex-end;
+    }
+
+    .banner__content {
+        align-items: flex-end;
+        text-align: right;
+        max-width: 800px;
+    }
+
+    .display__card {
+        gap: 0.5rem;
+    }
+
+    .display__card i {
+        font-size: 2.5rem;
+    }
+
+    .display__card p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .display__card {
+        gap: 1rem;
+    }
+
+    .display__card i {
+        font-size: 3rem;
+    }
+
+    .display__card h4 {     
+        font-size: 1.5rem;
+    }
+
+    .display__card p {
+        font-size: 1rem;
+    }
+}
